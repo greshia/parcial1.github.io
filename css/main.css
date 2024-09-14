@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.oswald-uniquifier {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+#contenedor .img{
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+header .logo {
+    cursor: pointer;
+}
+
+header .logo img {
+    height: 150px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.menu-hamburguesa{
+    width: 80px;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+.menu-hamburguesa img{
+    width: 100%;
+}
+nav {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 40px;
+    background-color: #e1db84;
+    margin-left: 10px;
+}
+
+nav a:hover{
+    transform: scale(1.1);
+    color: #a59b12;
+    transition: 0.5s;
+}
+
+#primer {
+    width: 100%;
+    height: 00px;
+    margin: 0 auto;
+}
+
+#primer div {
+    width: 50%;
+    height: 500px;
+    background-color: #9e9192;
+    float: left;
+}
+
+#primer img {
+    float: left;
+}
+.color {
+    font-size: 90px;
+    padding: 10px;
+    font-family: "Nerko One", cursive;
+    color: #385f4c;
+}
+
+.fav {
+    font-size: 40px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 100px;
+    padding-left: 500px;
+    color: #3b2432;
+}
+
+section fieldset{
+    padding: 50px;
+    width: 50%;
+    justify-content: center;
+    margin-left: 325px;
+    border-radius: 20px;
+}
+
+input#color{
+    background-color: #f8bbd5;
+}
+
+input {
+    background-color: #f8bbd5;
+    border: none;
+}
+
+#menu {
+    width: 100%;
+    height: 700px;
+    background-color: #9e9192;
+}
+
+.main{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.text {
+    color: black;
+}
+
+.foto img{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #9e9192;
+}
+
+footer section{
+    width: 340px;
+    height: 200px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 25px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+footer section a{
+    text-decoration: none;
+    color: rgb(2, 0, 0);
+    font-size: 20px;
+}
+
+#redes img{
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:1024px){
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    nav a{
+        padding: 0;
+    }
+    #primer div {
+        height: 400px;
+    }
+    footer{
+        width: 100%;
+    }
+    footer section{
+        width: 25%;
+    }
+    #menu {
+        width: 100%;
+    }
+    .main{
+        width: 30%;
+    }
+    h1 {
+        padding-left: 400px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    #menu {
+        width: 100%;
+        height: 600px;
+    }
+    .main{
+        width: 27%;
+    }
+    nav a{
+        padding: 0;
+        font-size: 30px;
+    }
+    .color {
+        font-size: 60px;
+    }
+    .fav{
+        font-size: 30px;
+    }
+    .main{
+        height: 60%;
+    }
+    #primer div {
+        height: 290px;
+    }
+    div.hambur{
+        width: 100%;
+    }
+    h1 {
+        padding-left: 250px;
+    }
+    section fieldset{
+        margin-left: 220px;
+    }
+    footer section{
+        width: 20%;
+    }
+    #redes img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .menu-hamburguesa{
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
+    #primer div {
+        width: 100%;
+    }
+    .color {
+        text-align: center;
+    }
+    .fav{
+        text-align: center;
+    }
+    section fieldset{
+        width: 100%;
+        margin-left: 0;
+    }
+    h1 {
+        padding-left: 125px;
+    }
+    .main{
+        width: 25%;
+    }
+    footer{
+        height: 600px;
+    }
+    footer section{
+        width: 49%;
+    }
+    #primer img {
+       width: 95%;
+       text-align: center;
+       height: 100%;
+    }
+}
